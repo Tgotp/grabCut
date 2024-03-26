@@ -1,0 +1,2 @@
+D:\mingw\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe qc libmaxflow.a CMakeFiles/maxflow.dir/graph.cpp.obj CMakeFiles/maxflow.dir/maxflow.cpp.obj
+D:\mingw\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\ranlib.exe libmaxflow.a
