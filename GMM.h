@@ -1,21 +1,29 @@
 #include<iostream>
 #include<opencv2/opencv.hpp>
-
+#include<vector>
 using namespace cv;
 using namespace std;
 
 class GMM
 {
-	int clustNum,max_steps;
-	int belong[2024 * 2024]; 
-	double eps;
-	double prob[10],prob_lst[10]; // 类别的可能性 
-	double means[10],means_lst[10]; //均值
-	double sigmas[10],sigmas_lst[10]; //协方差 
-	Mat data,data_lst;
-	int N,M; 
-	
-	void init(Mat img,int clustNum = 5,double eps = 0.01,int max_steps = 20);
+public:
+	void init(Mat img,Mat mask,int clustNum = 5,double eps_end = 1,double eps = 1e-16,int max_steps = 30);
 	void train();
-	int pred(int x);
+	double pred(double X[]);
+private:
+	int clustNum,max_steps;
+	int N,M,n;  
+	double eps,eps_end,logL_lst;//对数似然函数值 
+	vector<int> belong;
+	vector<double> det;
+	vector<double> prob; // 样本的可能性 
+	vector<double> weight; // 高斯分布的权重
+	vector<vector<double> > memberships; // p(i|k)
+	vector<Mat> means; //均值
+	vector<Mat> sigmas; //协方差 
+	vector<Mat> sigmas_inv; //协方差 ^-1
+	Mat data,imgMat;
+	
+//	double gauss(Mat x,Mat inv,double det);
+	double gauss(int m,double X[]);
 } ;

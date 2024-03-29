@@ -355,7 +355,12 @@ CMakeFiles/Grabcut.dir/GMM.cpp.obj: ../GMM.cpp \
   D:/OpenCV/opencv/sources/modules/stitching/include/opencv2/stitching/detail/camera.hpp \
   D:/OpenCV/opencv/sources/modules/video/include/opencv2/video.hpp \
   D:/OpenCV/opencv/sources/modules/video/include/opencv2/video/tracking.hpp \
-  D:/OpenCV/opencv/sources/modules/video/include/opencv2/video/background_segm.hpp
+  D:/OpenCV/opencv/sources/modules/video/include/opencv2/video/background_segm.hpp \
+  D:/OpenCV/opencv/sources/modules/highgui/include/opencv2/highgui/highgui_c.h \
+  D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/core_c.h \
+  D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/types_c.h \
+  D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h \
+  D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h
 
 CMakeFiles/Grabcut.dir/test4-OpenCV-Grabcut.cpp.obj: ../test4-OpenCV-Grabcut.cpp \
   D:/OpenCV/opencv/sources/include/opencv2/opencv.hpp \
@@ -1324,6 +1329,8 @@ D:/mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mi
 
 D:/OpenCV/opencv/sources/modules/dnn/include/opencv2/dnn/dnn.inl.hpp:
 
+D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/core_c.h:
+
 D:/OpenCV/opencv/sources/modules/flann/include/opencv2/flann.hpp:
 
 D:/OpenCV/opencv/sources/modules/flann/include/opencv2/flann/flann_base.hpp:
@@ -1409,6 +1416,14 @@ D:/OpenCV/opencv/sources/modules/stitching/include/opencv2/stitching/detail/came
 D:/OpenCV/opencv/sources/modules/stitching/include/opencv2/stitching/detail/blenders.hpp:
 
 D:/OpenCV/opencv/sources/modules/video/include/opencv2/video.hpp:
+
+D:/OpenCV/opencv/sources/modules/highgui/include/opencv2/highgui/highgui_c.h:
+
+D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/types_c.h:
+
+D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h:
+
+D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h:
 
 ../test4-OpenCV-Grabcut.cpp:
 

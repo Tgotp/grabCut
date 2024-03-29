@@ -352,4 +352,9 @@ CMakeFiles/Grabcut.dir/GMM.cpp.obj: E:\c++\Grabcut\GMM.cpp \
  D:/OpenCV/opencv/sources/modules/stitching/include/opencv2/stitching/detail/camera.hpp \
  D:/OpenCV/opencv/sources/modules/video/include/opencv2/video.hpp \
  D:/OpenCV/opencv/sources/modules/video/include/opencv2/video/tracking.hpp \
- D:/OpenCV/opencv/sources/modules/video/include/opencv2/video/background_segm.hpp
+ D:/OpenCV/opencv/sources/modules/video/include/opencv2/video/background_segm.hpp \
+ D:/OpenCV/opencv/sources/modules/highgui/include/opencv2/highgui/highgui_c.h \
+ D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/core_c.h \
+ D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/types_c.h \
+ D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h \
+ D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h
