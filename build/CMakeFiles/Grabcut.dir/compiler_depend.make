@@ -360,7 +360,8 @@ CMakeFiles/Grabcut.dir/GMM.cpp.obj: ../GMM.cpp \
   D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/core_c.h \
   D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/types_c.h \
   D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h \
-  D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h
+  D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h \
+  ../fastmath.h
 
 CMakeFiles/Grabcut.dir/test4-OpenCV-Grabcut.cpp.obj: ../test4-OpenCV-Grabcut.cpp \
   D:/OpenCV/opencv/sources/include/opencv2/opencv.hpp \
@@ -870,6 +871,8 @@ D:/mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mi
 D:/mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc:
 
 D:/mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h:
+
+../fastmath.h:
 
 D:/mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
 

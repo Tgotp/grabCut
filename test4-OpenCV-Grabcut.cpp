@@ -127,7 +127,7 @@ int main()
 //	cout <<fixed << setprecision(9)<< b << endl;
 	Mat image;   //创建一个空图像image
 	
-	image = imread("E:\\c++\\Grabcut\\image\\black_car.png");  //读取文件夹中的图像
+	image = imread("E:\\c++\\Grabcut\\image\\right\\flowers.png");  //读取文件夹中的图像
 
 	//检测图像是否加载成功
 	if (image.empty())  //检测image有无数据，无数据 image.empty()返回 真

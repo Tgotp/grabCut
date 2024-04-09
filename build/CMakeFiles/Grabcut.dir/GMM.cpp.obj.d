@@ -357,4 +357,5 @@ CMakeFiles/Grabcut.dir/GMM.cpp.obj: E:\c++\Grabcut\GMM.cpp \
  D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/core_c.h \
  D:/OpenCV/opencv/sources/modules/core/include/opencv2/core/types_c.h \
  D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h \
- D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h
+ D:/OpenCV/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h \
+ E:\c++\Grabcut\fastmath.h

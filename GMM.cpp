@@ -1,6 +1,7 @@
 #include "GMM.h"
 #include <opencv2/highgui/highgui_c.h>
 #include <cstring>
+#include "fastmath.h" 
 //#pragma GCC optimize(3,"Ofast","inline")
 //#pragma GCC optimize(2)
 
@@ -118,7 +119,7 @@ void GMM :: train()
 //					cout << gauss(j,X) << endl;
 //				exit(0); 
 //			}
-			logL -= log(sum[5]);
+			logL -= fast_log(sum[5]);
 			//p(i|k) i数据在第k类中的比例 
 			memberships[i][0] = sum[0] / sum[5];
 			memberships[i][1] = sum[1] / sum[5];
@@ -230,7 +231,7 @@ double GMM :: pred(double X[])
 		p += weight[i] * gauss(i,X);
 //	cout << p << endl;
 	if(p < 1e-9) return 1e9;
-	return - log(p);
+	return - fast_log(p);
 }
 
 const double PREpdf = 15.749609946; //(2*pi)^(3/2) 
@@ -252,7 +253,7 @@ double GMM :: gauss(int m,double X[]) // m=类,x=样本
 	
 //	 cout << x1 << ' ' <<x2 <<" "<< x3 << ' ' <<det[m]<< endl;
 //	if(flag) cout << "unknow"<<x1 * x1 * a1 + x1 * x2 * (a2 + a4) + x1 * x3 * (a3 + a7) + x2 * x2 * a5+ x2 * x3 * (a6+a8) + x3 * x3 * a9<<endl;
-	return max(min(1e9,exp(-0.5* (x1 * x1 * a1 + x1 * x2 * (a2 + a4) + x1 * x3 * (a3 + a7) 
+	return max(min(1e9,fast_exp(-0.5* (x1 * x1 * a1 + x1 * x2 * (a2 + a4) + x1 * x3 * (a3 + a7) 
 							+ x2 * x2 * a5 + x2 * x3 * (a6+a8) + x3 * x3 * a9)) 
 								* 10000.0/det[m]
 //								/ (PREpdf * det[m])  //* 100000

@@ -7,7 +7,7 @@ using namespace std;
 class GMM
 {
 public:
-	void init(Mat img,Mat mask,int clustNum = 5,double eps_end = 1,double eps = 1e-16,int max_steps = 30);
+	void init(Mat img,Mat mask,int clustNum = 5,double eps_end = 0.01,double eps = 1e-16,int max_steps = 30);
 	void train();
 	double pred(double X[]);
 private:
